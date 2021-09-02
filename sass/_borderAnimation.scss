@@ -1,0 +1,32 @@
+.pulse {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+  color: gold;
+  z-index: 1;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: -1;
+  }
+  &:before {
+    animation: border-pulse 1.5s linear infinite;
+  }
+  &:after {
+    animation: border-pulse 1.5s 1s linear infinite;
+  }
+}

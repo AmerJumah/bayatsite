@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+$gold : #d1a767;
+$gold-light : #e6c243;
+
+$primary : $gold;
+$secondary : #656566;
+
+//FONTS
+$font-family-base: "Cairo";
+$font-size-base: 1rem;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./mixins";
+@import "./buttons";
+@import "./animations";
+@import "./typography";
+@import "./nav";
+@import "./hero";
+@import "./about";
+@import "./services";

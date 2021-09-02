@@ -1,0 +1,13 @@
+.menu{
+    z-index: 30;
+    li{
+        padding: 0 0.7rem;
+        a{
+            font-size: $font-size-base / 1.2;
+        }
+    }
+    button{
+        margin-right: 0.7rem;
+    }
+}
+

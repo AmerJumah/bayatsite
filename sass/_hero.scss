@@ -1,0 +1,88 @@
+
+#home{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+    video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        object-fit: cover;
+        background-color: $primary;
+    }
+    &::after{
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: rgba(0,0,0,0.5);
+
+    }
+    .intro{
+        z-index: 15;
+        
+        &-header{
+            font-size: $font-size-base * 2;
+            font-weight: bold;
+        }
+        &-desc{
+            font-size: $font-size-base * 1.3;
+        }
+        &-feat{
+            height: 3.5rem;
+            width: 12rem;
+            border: 3px solid $gold-light;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 3rem;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: .9rem;
+        }
+    }
+}
+
+.play {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 1;
+    &:before,
+    &:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+    &:before {
+      animation: pulse 1.5s linear infinite;
+    }
+    &:after {
+      animation: pulse 1.5s 1s linear infinite;
+    }
+    a{
+        @include anbsolute-center;
+    }
+}

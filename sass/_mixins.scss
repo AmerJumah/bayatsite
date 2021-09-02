@@ -1,0 +1,14 @@
+@mixin anbsolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin gradient {
+    background: linear-gradient(
+      to right,
+      rgba($gold, 0.95),
+      rgba($gold-light, 0.95)
+    );
+  }
